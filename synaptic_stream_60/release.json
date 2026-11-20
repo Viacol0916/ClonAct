@@ -1,0 +1,9 @@
+{
+  "name": "Synaptic-Stream-60",
+  "version": "1.0.0",
+  "source_versions": {
+    "dataset": "3.0.0",
+    "evaluator": "3.0.0"
+  },
+  "dataset_sha256": "f6a2f839a71c475f9a763bd1954061d932d233a410938e7b6d36ea26a5f04459"
+}

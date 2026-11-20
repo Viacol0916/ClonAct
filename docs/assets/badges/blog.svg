@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="156" height="26" viewBox="0 0 156 26" role="img" aria-labelledby="title">
+  <title id="title">Blog: Read article</title>
+  <clipPath id="round"><rect width="156" height="26" rx="4"/></clipPath>
+  <g clip-path="url(#round)">
+    <path fill="#343b43" d="M0 0h64v26H0z"/>
+    <path fill="#80552f" d="M64 0h92v26H64z"/>
+  </g>
+  <g fill="none" stroke="#fff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h5l2 2 2-2h5v11h-5l-2 2-2-2H7z M14 9v11"/></g>
+  <g fill="#fff" font-family="Verdana,DejaVu Sans,sans-serif" font-size="11">
+    <text x="28" y="17">Blog</text>
+    <text x="110.0" y="17" text-anchor="middle">Read article</text>
+  </g>
+</svg>

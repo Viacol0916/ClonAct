@@ -1,0 +1,22 @@
+{
+  "name": "synaptic-dsh-worker-bridge",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Orchestrator-free native DSH worker session bridge for Synaptic-PA ContextCells.",
+  "type": "module",
+  "main": "./index.mjs",
+  "exports": {
+    ".": "./index.mjs",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.mjs",
+    "cordis.patch.yml"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "manifestVersion": 1
+  }
+}

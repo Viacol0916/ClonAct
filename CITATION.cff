@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use ClonAct, please cite this software and paper, and acknowledge the upstream benchmarks used."
+type: software
+title: "ClonAct: Scheduling Context Blocks as Resources for Always-On Personal Agents"
+authors:
+  - family-names: Tian
+    given-names: Xufei
+  - family-names: Hu
+    given-names: Han
+  - family-names: Du
+    given-names: Wenli
+version: 1.0.0
+license: MIT
+repository-code: "https://github.com/Viacol0916/ClonAct"
+url: "https://viacol.pages.dev/blog/context-as-a-resource/"
+preferred-citation:
+  type: article
+  title: "Context as a Resource"
+  authors:
+    - family-names: Tian
+      given-names: Xufei
+    - family-names: Hu
+      given-names: Han
+    - family-names: Du
+      given-names: Wenli
+  year: 2026
+  identifiers:
+    - type: other
+      value: "arXiv:2611.26346"
+  url: "https://arxiv.org/abs/2611.26346"

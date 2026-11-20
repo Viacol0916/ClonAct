@@ -1,0 +1,10 @@
+{
+  "name": "dsh_runner",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local Node dependency manifest for the DeepSeek DSH Agent runtime",
+  "license": "MIT",
+  "dependencies": {
+    "@deepseek-ai/dsh": "0.2.1-rc.3"
+  }
+}

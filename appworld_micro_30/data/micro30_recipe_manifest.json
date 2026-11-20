@@ -1,0 +1,2209 @@
+{
+  "benchmark": "AppWorld-Micro-30",
+  "version": "1.0.1",
+  "license_notice": "Upstream AppWorld protected data is downloaded and reconstructed locally, never redistributed in plaintext. Run .venv_appworld/bin/appworld download data from the project root, then python -m appworld_micro_30.build_dataset. See THIRD_PARTY_NOTICES.md.",
+  "total_episodes": 30,
+  "total_unique_upstream_tasks": 60,
+  "episodes": [
+    {
+      "episode_id": "AW_M1_01",
+      "track_id": "M-1",
+      "scenario_type": "concurrent_disjoint_action_burst",
+      "datetime": "2023-05-18T12:00:00",
+      "dataset_version": "1.0.0",
+      "expected_episode_sha256": "97edcf23fd42b0e07c0275dbea106a8085607cf7b96f3dd752c6f77b35103f58",
+      "subtasks": [
+        {
+          "subtask_tag": "sub_a",
+          "upstream_task_id": "c901732_3"
+        },
+        {
+          "subtask_tag": "sub_b",
+          "upstream_task_id": "68ee2c9_2"
+        }
+      ],
+      "timeline_structure": [
+        {
+          "event_id": "ev_act_a",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "immediate",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_a",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_1",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "maya_design",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 0.5,
+          "target_subtask_tag": null,
+          "noise_text": "Heads up team: Figma library tokens for the Q3 icon refresh just finished syncing."
+        },
+        {
+          "event_id": "ev_act_b",
+          "kind": "external_task_webhook",
+          "channel": "github_issue",
+          "sender": "personal_errand_sync",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.0,
+          "target_subtask_tag": "sub_b",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_dup_a",
+          "kind": "external_duplicate_webhook",
+          "channel": "feishu_group",
+          "sender": "sync_reminder_bot",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.5,
+          "target_subtask_tag": "sub_a",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_2",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "liam_ops",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 2.0,
+          "target_subtask_tag": null,
+          "noise_text": "Lobby espresso machine on floor 4 is back online after descaling."
+        },
+        {
+          "event_id": "ev_noise_3",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "chloe_hr",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 2.5,
+          "target_subtask_tag": null,
+          "noise_text": "Reminder that optional wellness ergonomic assessments close this Friday at 5pm."
+        }
+      ]
+    },
+    {
+      "episode_id": "AW_M1_02",
+      "track_id": "M-1",
+      "scenario_type": "concurrent_disjoint_action_burst",
+      "datetime": "2023-05-18T12:00:00",
+      "dataset_version": "1.0.0",
+      "expected_episode_sha256": "a1bff269d134e5d555a7e549ca15664d23fb2f39e60601a85c7a0c1628c48fbe",
+      "subtasks": [
+        {
+          "subtask_tag": "sub_a",
+          "upstream_task_id": "771d8fc_1"
+        },
+        {
+          "subtask_tag": "sub_b",
+          "upstream_task_id": "57c3486_3"
+        }
+      ],
+      "timeline_structure": [
+        {
+          "event_id": "ev_act_a",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "immediate",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_a",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_1",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "noah_infra",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 0.5,
+          "target_subtask_tag": null,
+          "noise_text": "FYI staging Grafana dashboards may blip for ~30s while we rotate read-replica certs."
+        },
+        {
+          "event_id": "ev_act_b",
+          "kind": "external_task_webhook",
+          "channel": "github_issue",
+          "sender": "personal_errand_sync",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.0,
+          "target_subtask_tag": "sub_b",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_dup_a",
+          "kind": "external_duplicate_webhook",
+          "channel": "feishu_group",
+          "sender": "sync_reminder_bot",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.5,
+          "target_subtask_tag": "sub_a",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_2",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "sofia_qa",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 2.0,
+          "target_subtask_tag": null,
+          "noise_text": "Anyone leaving an umbrella near conference room Birch? Left it at reception."
+        },
+        {
+          "event_id": "ev_noise_3",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "ethan_pm",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 2.5,
+          "target_subtask_tag": null,
+          "noise_text": "Kudos to the mobile crew for keeping crash-free sessions above 99.9% this week!"
+        }
+      ]
+    },
+    {
+      "episode_id": "AW_M1_03",
+      "track_id": "M-1",
+      "scenario_type": "concurrent_disjoint_action_burst",
+      "datetime": "2023-05-18T12:00:00",
+      "dataset_version": "1.0.0",
+      "expected_episode_sha256": "421a5d8dcc8069ab82d69c6073e756d07e43200090961878c95096e6dbfdbdf1",
+      "subtasks": [
+        {
+          "subtask_tag": "sub_a",
+          "upstream_task_id": "13547f5_3"
+        },
+        {
+          "subtask_tag": "sub_b",
+          "upstream_task_id": "5e27cd7_2"
+        }
+      ],
+      "timeline_structure": [
+        {
+          "event_id": "ev_act_a",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "immediate",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_a",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_1",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "maya_design",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 0.5,
+          "target_subtask_tag": null,
+          "noise_text": "Sharing the dark-mode contrast audit slides in the general design folder for casual reading."
+        },
+        {
+          "event_id": "ev_act_b",
+          "kind": "external_task_webhook",
+          "channel": "github_issue",
+          "sender": "personal_errand_sync",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.0,
+          "target_subtask_tag": "sub_b",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_dup_a",
+          "kind": "external_duplicate_webhook",
+          "channel": "feishu_group",
+          "sender": "sync_reminder_bot",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.5,
+          "target_subtask_tag": "sub_a",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_2",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "liam_ops",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 2.0,
+          "target_subtask_tag": null,
+          "noise_text": "Catering dropped off extra sourdough bagels in the west kitchen if anyone wants one."
+        },
+        {
+          "event_id": "ev_noise_3",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "chloe_hr",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 2.5,
+          "target_subtask_tag": null,
+          "noise_text": "Parking garage level B2 will have EV charger maintenance tomorrow morning."
+        }
+      ]
+    },
+    {
+      "episode_id": "AW_M1_04",
+      "track_id": "M-1",
+      "scenario_type": "concurrent_disjoint_action_burst",
+      "datetime": "2023-05-18T12:00:00",
+      "dataset_version": "1.0.0",
+      "expected_episode_sha256": "5d365e075779d29c6243774d9bae3bed584b7af436d649f204003529cf35cb74",
+      "subtasks": [
+        {
+          "subtask_tag": "sub_a",
+          "upstream_task_id": "cf6abd2_2"
+        },
+        {
+          "subtask_tag": "sub_b",
+          "upstream_task_id": "29a7b7e_3"
+        }
+      ],
+      "timeline_structure": [
+        {
+          "event_id": "ev_act_a",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "immediate",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_a",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_1",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "noah_infra",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 0.5,
+          "target_subtask_tag": null,
+          "noise_text": "Weekly CI cache cleanup reclaimed 180 GB on the runner pool, no action required."
+        },
+        {
+          "event_id": "ev_act_b",
+          "kind": "external_task_webhook",
+          "channel": "github_issue",
+          "sender": "personal_errand_sync",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.0,
+          "target_subtask_tag": "sub_b",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_dup_a",
+          "kind": "external_duplicate_webhook",
+          "channel": "feishu_group",
+          "sender": "sync_reminder_bot",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.5,
+          "target_subtask_tag": "sub_a",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_2",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "sofia_qa",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 2.0,
+          "target_subtask_tag": null,
+          "noise_text": "BrowserStack macOS Ventura queue times are back down under 15 seconds now."
+        },
+        {
+          "event_id": "ev_noise_3",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "ethan_pm",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 2.5,
+          "target_subtask_tag": null,
+          "noise_text": "Moving Thursday's optional brown-bag lightning talks from room Cedar to Maple."
+        }
+      ]
+    },
+    {
+      "episode_id": "AW_M1_05",
+      "track_id": "M-1",
+      "scenario_type": "concurrent_disjoint_action_burst",
+      "datetime": "2023-05-18T12:00:00",
+      "dataset_version": "1.0.0",
+      "expected_episode_sha256": "e9fb578ef242aabe9a3077095a0f6901df1567f0cbc181c0b4290b0105579f31",
+      "subtasks": [
+        {
+          "subtask_tag": "sub_a",
+          "upstream_task_id": "3ab5b8b_1"
+        },
+        {
+          "subtask_tag": "sub_b",
+          "upstream_task_id": "2e9b91e_1"
+        }
+      ],
+      "timeline_structure": [
+        {
+          "event_id": "ev_act_a",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "immediate",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_a",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_1",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "hana_analytics",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 0.5,
+          "target_subtask_tag": null,
+          "noise_text": "Published the monthly funnel cohort chart in Metabase—purely FYI, no action items."
+        },
+        {
+          "event_id": "ev_act_b",
+          "kind": "external_task_webhook",
+          "channel": "github_issue",
+          "sender": "personal_errand_sync",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.0,
+          "target_subtask_tag": "sub_b",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_dup_a",
+          "kind": "external_duplicate_webhook",
+          "channel": "feishu_group",
+          "sender": "sync_reminder_bot",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.5,
+          "target_subtask_tag": "sub_a",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_2",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "lucas_sec",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 2.0,
+          "target_subtask_tag": null,
+          "noise_text": "Monthly phishing drill wrap-up posted on the intranet blog; great report rate everyone."
+        },
+        {
+          "event_id": "ev_noise_3",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "ava_comms",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 2.5,
+          "target_subtask_tag": null,
+          "noise_text": "Press clipping digest for May is live in the company newsletter archive."
+        }
+      ]
+    },
+    {
+      "episode_id": "AW_M1_06",
+      "track_id": "M-1",
+      "scenario_type": "concurrent_disjoint_action_burst",
+      "datetime": "2023-05-18T12:00:00",
+      "dataset_version": "1.0.0",
+      "expected_episode_sha256": "79e52659aaa07205da9ee3cb87912ce00bc6fe95d95ef5c860606e8b196763c6",
+      "subtasks": [
+        {
+          "subtask_tag": "sub_a",
+          "upstream_task_id": "6ea6792_1"
+        },
+        {
+          "subtask_tag": "sub_b",
+          "upstream_task_id": "baeb104_1"
+        }
+      ],
+      "timeline_structure": [
+        {
+          "event_id": "ev_act_a",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "immediate",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_a",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_1",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "owen_support",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 0.5,
+          "target_subtask_tag": null,
+          "noise_text": "CSAT ticked up 3 points after last Tuesday's help-center search tweak!"
+        },
+        {
+          "event_id": "ev_act_b",
+          "kind": "external_task_webhook",
+          "channel": "github_issue",
+          "sender": "personal_errand_sync",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.0,
+          "target_subtask_tag": "sub_b",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_dup_a",
+          "kind": "external_duplicate_webhook",
+          "channel": "feishu_group",
+          "sender": "sync_reminder_bot",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.5,
+          "target_subtask_tag": "sub_a",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_2",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "maya_design",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 2.0,
+          "target_subtask_tag": null,
+          "noise_text": "Typography specimen posters arrived—feel free to grab one by the printer bay."
+        },
+        {
+          "event_id": "ev_noise_3",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "liam_ops",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 2.5,
+          "target_subtask_tag": null,
+          "noise_text": "Shuttle bus route B is running 5 minutes behind due to rain on Mercer Street."
+        }
+      ]
+    },
+    {
+      "episode_id": "AW_M1_07",
+      "track_id": "M-1",
+      "scenario_type": "concurrent_disjoint_action_burst",
+      "datetime": "2023-05-18T12:00:00",
+      "dataset_version": "1.0.0",
+      "expected_episode_sha256": "4960a54993245dc5cbdf6ca3e55bb3bda29393c61a4b1f5ea3e8b89ecc1c91ca",
+      "subtasks": [
+        {
+          "subtask_tag": "sub_a",
+          "upstream_task_id": "0d22252_1"
+        },
+        {
+          "subtask_tag": "sub_b",
+          "upstream_task_id": "f3f60f0_3"
+        }
+      ],
+      "timeline_structure": [
+        {
+          "event_id": "ev_act_a",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "immediate",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_a",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_1",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "chloe_hr",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 0.5,
+          "target_subtask_tag": null,
+          "noise_text": "Book club voted on 'Designing Data-Intensive Applications' for next month's casual chat."
+        },
+        {
+          "event_id": "ev_act_b",
+          "kind": "external_task_webhook",
+          "channel": "github_issue",
+          "sender": "personal_errand_sync",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.0,
+          "target_subtask_tag": "sub_b",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_dup_a",
+          "kind": "external_duplicate_webhook",
+          "channel": "feishu_group",
+          "sender": "sync_reminder_bot",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.5,
+          "target_subtask_tag": "sub_a",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_2",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "noah_infra",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 2.0,
+          "target_subtask_tag": null,
+          "noise_text": "CDN edge PoP in Frankfurt finished routine BGP maintenance with zero packet loss."
+        },
+        {
+          "event_id": "ev_noise_3",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "sofia_qa",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 2.5,
+          "target_subtask_tag": null,
+          "noise_text": "Updated the optional Playwright tips wiki page with trace-viewer keyboard shortcuts."
+        }
+      ]
+    },
+    {
+      "episode_id": "AW_M1_08",
+      "track_id": "M-1",
+      "scenario_type": "concurrent_disjoint_action_burst",
+      "datetime": "2023-05-18T12:00:00",
+      "dataset_version": "1.0.0",
+      "expected_episode_sha256": "f5515563e57d7811f20cc8a3b2edc282f986c7e8134d1b1b7fe6591516ec3e89",
+      "subtasks": [
+        {
+          "subtask_tag": "sub_a",
+          "upstream_task_id": "c901732_1"
+        },
+        {
+          "subtask_tag": "sub_b",
+          "upstream_task_id": "024c982_1"
+        }
+      ],
+      "timeline_structure": [
+        {
+          "event_id": "ev_act_a",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "immediate",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_a",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_1",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "ethan_pm",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 0.5,
+          "target_subtask_tag": null,
+          "noise_text": "Customer advisory board recap recording is uploaded for anyone curious over lunch."
+        },
+        {
+          "event_id": "ev_act_b",
+          "kind": "external_task_webhook",
+          "channel": "github_issue",
+          "sender": "personal_errand_sync",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.0,
+          "target_subtask_tag": "sub_b",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_dup_a",
+          "kind": "external_duplicate_webhook",
+          "channel": "feishu_group",
+          "sender": "sync_reminder_bot",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.5,
+          "target_subtask_tag": "sub_a",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_2",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "hana_analytics",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 2.0,
+          "target_subtask_tag": null,
+          "noise_text": "Snowflake warehouse auto-suspend window tuned from 10m to 5m—queries unaffected."
+        },
+        {
+          "event_id": "ev_noise_3",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "lucas_sec",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 2.5,
+          "target_subtask_tag": null,
+          "noise_text": "YubiKey lanyards are restocked in the IT vending locker on floor 3."
+        }
+      ]
+    },
+    {
+      "episode_id": "AW_M1_09",
+      "track_id": "M-1",
+      "scenario_type": "concurrent_disjoint_action_burst",
+      "datetime": "2023-05-18T12:00:00",
+      "dataset_version": "1.0.0",
+      "expected_episode_sha256": "79b20d60fffdad59409a3f76cc354f4fd0e9e48731206a3c79e146b0e989e6a3",
+      "subtasks": [
+        {
+          "subtask_tag": "sub_a",
+          "upstream_task_id": "df61dc5_3"
+        },
+        {
+          "subtask_tag": "sub_b",
+          "upstream_task_id": "baeb104_3"
+        }
+      ],
+      "timeline_structure": [
+        {
+          "event_id": "ev_act_a",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "immediate",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_a",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_1",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "ava_comms",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 0.5,
+          "target_subtask_tag": null,
+          "noise_text": "Town hall Q&A Slido link will open tomorrow afternoon as usual."
+        },
+        {
+          "event_id": "ev_act_b",
+          "kind": "external_task_webhook",
+          "channel": "github_issue",
+          "sender": "personal_errand_sync",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.0,
+          "target_subtask_tag": "sub_b",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_dup_a",
+          "kind": "external_duplicate_webhook",
+          "channel": "feishu_group",
+          "sender": "sync_reminder_bot",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.5,
+          "target_subtask_tag": "sub_a",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_2",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "owen_support",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 2.0,
+          "target_subtask_tag": null,
+          "noise_text": "Shout-out to docs team—ticket deflection on billing FAQs looked super clean this morning."
+        },
+        {
+          "event_id": "ev_noise_3",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "maya_design",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 2.5,
+          "target_subtask_tag": null,
+          "noise_text": "Testing a new acoustic panel layout in pod 2B; let facility ops know if it feels quieter."
+        }
+      ]
+    },
+    {
+      "episode_id": "AW_M1_10",
+      "track_id": "M-1",
+      "scenario_type": "concurrent_disjoint_action_burst",
+      "datetime": "2023-05-18T12:00:00",
+      "dataset_version": "1.0.0",
+      "expected_episode_sha256": "3aa2866a65975a5d43bb7ac666d9149e80e8a67ccdd9fbf5d1b65f277ce96880",
+      "subtasks": [
+        {
+          "subtask_tag": "sub_a",
+          "upstream_task_id": "771d8fc_2"
+        },
+        {
+          "subtask_tag": "sub_b",
+          "upstream_task_id": "024c982_2"
+        }
+      ],
+      "timeline_structure": [
+        {
+          "event_id": "ev_act_a",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "immediate",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_a",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_1",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "liam_ops",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 0.5,
+          "target_subtask_tag": null,
+          "noise_text": "Recycling bins near the elevator bank were swapped for larger compost/paper split units."
+        },
+        {
+          "event_id": "ev_act_b",
+          "kind": "external_task_webhook",
+          "channel": "github_issue",
+          "sender": "personal_errand_sync",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.0,
+          "target_subtask_tag": "sub_b",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_dup_a",
+          "kind": "external_duplicate_webhook",
+          "channel": "feishu_group",
+          "sender": "sync_reminder_bot",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.5,
+          "target_subtask_tag": "sub_a",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_2",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "chloe_hr",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 2.0,
+          "target_subtask_tag": null,
+          "noise_text": "Volunteer tree-planting photos from Saturday are up in the #social gallery!"
+        },
+        {
+          "event_id": "ev_noise_3",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "noah_infra",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 2.5,
+          "target_subtask_tag": null,
+          "noise_text": "Mirror registry sync latency is back to 40ms p95 after upstream ISP reroute."
+        }
+      ]
+    },
+    {
+      "episode_id": "AW_M2_01",
+      "track_id": "M-2",
+      "scenario_type": "readonly_qa_gate_then_action",
+      "datetime": "2023-05-18T12:00:00",
+      "dataset_version": "1.0.0",
+      "expected_episode_sha256": "8166d6bc2fbfe5bbfa4b527e9931b6e988d27548016daab7510b8d77383489f1",
+      "subtasks": [
+        {
+          "subtask_tag": "sub_qa",
+          "upstream_task_id": "e85d92a_2"
+        },
+        {
+          "subtask_tag": "sub_act",
+          "upstream_task_id": "6ea6792_2"
+        }
+      ],
+      "timeline_structure": [
+        {
+          "event_id": "ev_qa_gate",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "immediate",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_qa",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_1",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "sofia_qa",
+          "trigger_mode": "after_turn_settled",
+          "offset_sec": 0.0,
+          "target_subtask_tag": null,
+          "noise_text": "Android test tablet #4 is plugged into the charging dock in lab rack B."
+        },
+        {
+          "event_id": "ev_act_launch",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "after_turn_settled",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_act",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_dup_act",
+          "kind": "external_duplicate_webhook",
+          "channel": "feishu_group",
+          "sender": "sync_reminder_bot",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.0,
+          "target_subtask_tag": "sub_act",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_2",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "ethan_pm",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.5,
+          "target_subtask_tag": null,
+          "noise_text": "No standup deck needed this Friday—we'll keep it an async slack/chat check-in."
+        }
+      ]
+    },
+    {
+      "episode_id": "AW_M2_02",
+      "track_id": "M-2",
+      "scenario_type": "readonly_qa_gate_then_action",
+      "datetime": "2023-05-18T12:00:00",
+      "dataset_version": "1.0.0",
+      "expected_episode_sha256": "fa154b3b443c8da24b29189332410903d0bc24aff255ed464203b5102d78c8e6",
+      "subtasks": [
+        {
+          "subtask_tag": "sub_qa",
+          "upstream_task_id": "3650990_1"
+        },
+        {
+          "subtask_tag": "sub_act",
+          "upstream_task_id": "07b42fd_2"
+        }
+      ],
+      "timeline_structure": [
+        {
+          "event_id": "ev_qa_gate",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "immediate",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_qa",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_1",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "hana_analytics",
+          "trigger_mode": "after_turn_settled",
+          "offset_sec": 0.0,
+          "target_subtask_tag": null,
+          "noise_text": "Archived three deprecated 2021 looker sandboxes; active dashboards untouched."
+        },
+        {
+          "event_id": "ev_act_launch",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "after_turn_settled",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_act",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_dup_act",
+          "kind": "external_duplicate_webhook",
+          "channel": "feishu_group",
+          "sender": "sync_reminder_bot",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.0,
+          "target_subtask_tag": "sub_act",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_2",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "lucas_sec",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.5,
+          "target_subtask_tag": null,
+          "noise_text": "Friendly note: visitor badge kiosk #1 got a new thermal paper roll."
+        }
+      ]
+    },
+    {
+      "episode_id": "AW_M2_03",
+      "track_id": "M-2",
+      "scenario_type": "readonly_qa_gate_then_action",
+      "datetime": "2023-05-18T12:00:00",
+      "dataset_version": "1.0.0",
+      "expected_episode_sha256": "d61cb86f90d716c13d8b15e806a088947d1d63fd3aec5df2f4f7bb394c6f9e76",
+      "subtasks": [
+        {
+          "subtask_tag": "sub_qa",
+          "upstream_task_id": "21abae1_1"
+        },
+        {
+          "subtask_tag": "sub_act",
+          "upstream_task_id": "98d2608_1"
+        }
+      ],
+      "timeline_structure": [
+        {
+          "event_id": "ev_qa_gate",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "immediate",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_qa",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_1",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "ava_comms",
+          "trigger_mode": "after_turn_settled",
+          "offset_sec": 0.0,
+          "target_subtask_tag": null,
+          "noise_text": "Podcast episode featuring our open-source maintainers just went live on the blog."
+        },
+        {
+          "event_id": "ev_act_launch",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "after_turn_settled",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_act",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_dup_act",
+          "kind": "external_duplicate_webhook",
+          "channel": "feishu_group",
+          "sender": "sync_reminder_bot",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.0,
+          "target_subtask_tag": "sub_act",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_2",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "owen_support",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.5,
+          "target_subtask_tag": null,
+          "noise_text": "Holiday coverage swap sheet for July will circulate next week, nothing needed today."
+        }
+      ]
+    },
+    {
+      "episode_id": "AW_M2_04",
+      "track_id": "M-2",
+      "scenario_type": "readonly_qa_gate_then_action",
+      "datetime": "2023-05-18T12:00:00",
+      "dataset_version": "1.0.0",
+      "expected_episode_sha256": "d1aac7fb2b0c7edc01f2085fb946b38e5528c3e47022c3a95ba005e1b9b1e563",
+      "subtasks": [
+        {
+          "subtask_tag": "sub_qa",
+          "upstream_task_id": "f691597_3"
+        },
+        {
+          "subtask_tag": "sub_act",
+          "upstream_task_id": "dbc0276_1"
+        }
+      ],
+      "timeline_structure": [
+        {
+          "event_id": "ev_qa_gate",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "immediate",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_qa",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_1",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "maya_design",
+          "trigger_mode": "after_turn_settled",
+          "offset_sec": 0.0,
+          "target_subtask_tag": null,
+          "noise_text": "Exported fresh SVG logos without clipping masks into the shared brand kit."
+        },
+        {
+          "event_id": "ev_act_launch",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "after_turn_settled",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_act",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_dup_act",
+          "kind": "external_duplicate_webhook",
+          "channel": "feishu_group",
+          "sender": "sync_reminder_bot",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.0,
+          "target_subtask_tag": "sub_act",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_2",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "liam_ops",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.5,
+          "target_subtask_tag": null,
+          "noise_text": "Air filter replacement on the north wing wrapped up twenty minutes early."
+        }
+      ]
+    },
+    {
+      "episode_id": "AW_M2_05",
+      "track_id": "M-2",
+      "scenario_type": "readonly_qa_gate_then_action",
+      "datetime": "2023-05-18T12:00:00",
+      "dataset_version": "1.0.0",
+      "expected_episode_sha256": "49fcc640d804906083ecc307c8926bb8aa5b071fd33e4b208b5598864ef6e6ba",
+      "subtasks": [
+        {
+          "subtask_tag": "sub_qa",
+          "upstream_task_id": "afc4005_3"
+        },
+        {
+          "subtask_tag": "sub_act",
+          "upstream_task_id": "1150ed6_3"
+        }
+      ],
+      "timeline_structure": [
+        {
+          "event_id": "ev_qa_gate",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "immediate",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_qa",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_1",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "chloe_hr",
+          "trigger_mode": "after_turn_settled",
+          "offset_sec": 0.0,
+          "target_subtask_tag": null,
+          "noise_text": "Commuter transit subsidy receipts for June use the same portal as last quarter."
+        },
+        {
+          "event_id": "ev_act_launch",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "after_turn_settled",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_act",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_dup_act",
+          "kind": "external_duplicate_webhook",
+          "channel": "feishu_group",
+          "sender": "sync_reminder_bot",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.0,
+          "target_subtask_tag": "sub_act",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_2",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "noah_infra",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.5,
+          "target_subtask_tag": null,
+          "noise_text": "Prometheus retention bumped to 30 days on the dev metrics cluster—FYI only."
+        }
+      ]
+    },
+    {
+      "episode_id": "AW_M2_06",
+      "track_id": "M-2",
+      "scenario_type": "readonly_qa_gate_then_action",
+      "datetime": "2023-05-18T12:00:00",
+      "dataset_version": "1.0.0",
+      "expected_episode_sha256": "5ec17972f6fdf8bc5e82102897b9db39400ac6b54e25dd564da0075fe00526fc",
+      "subtasks": [
+        {
+          "subtask_tag": "sub_qa",
+          "upstream_task_id": "dac78d9_3"
+        },
+        {
+          "subtask_tag": "sub_act",
+          "upstream_task_id": "302c169_2"
+        }
+      ],
+      "timeline_structure": [
+        {
+          "event_id": "ev_qa_gate",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "immediate",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_qa",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_1",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "sofia_qa",
+          "trigger_mode": "after_turn_settled",
+          "offset_sec": 0.0,
+          "target_subtask_tag": null,
+          "noise_text": "Nightly smoke suite stayed green 14 nights straight, nice streak folks."
+        },
+        {
+          "event_id": "ev_act_launch",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "after_turn_settled",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_act",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_dup_act",
+          "kind": "external_duplicate_webhook",
+          "channel": "feishu_group",
+          "sender": "sync_reminder_bot",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.0,
+          "target_subtask_tag": "sub_act",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_2",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "ethan_pm",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.5,
+          "target_subtask_tag": null,
+          "noise_text": "Product glossary page added two acronyms from the partner API webinar."
+        }
+      ]
+    },
+    {
+      "episode_id": "AW_M2_07",
+      "track_id": "M-2",
+      "scenario_type": "readonly_qa_gate_then_action",
+      "datetime": "2023-05-18T12:00:00",
+      "dataset_version": "1.0.0",
+      "expected_episode_sha256": "51bdb395283315355153cec9ef0739e70a39acce9042206887064dafa9095d08",
+      "subtasks": [
+        {
+          "subtask_tag": "sub_qa",
+          "upstream_task_id": "a30375d_3"
+        },
+        {
+          "subtask_tag": "sub_act",
+          "upstream_task_id": "5a83b05_1"
+        }
+      ],
+      "timeline_structure": [
+        {
+          "event_id": "ev_qa_gate",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "immediate",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_qa",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_1",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "hana_analytics",
+          "trigger_mode": "after_turn_settled",
+          "offset_sec": 0.0,
+          "target_subtask_tag": null,
+          "noise_text": "BigQuery slot utilization stayed under 35% during the morning batch window."
+        },
+        {
+          "event_id": "ev_act_launch",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "after_turn_settled",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_act",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_dup_act",
+          "kind": "external_duplicate_webhook",
+          "channel": "feishu_group",
+          "sender": "sync_reminder_bot",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.0,
+          "target_subtask_tag": "sub_act",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_2",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "lucas_sec",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.5,
+          "target_subtask_tag": null,
+          "noise_text": "laptop privacy screen protectors (14-inch and 16-inch) are in the supply drawer."
+        }
+      ]
+    },
+    {
+      "episode_id": "AW_M2_08",
+      "track_id": "M-2",
+      "scenario_type": "readonly_qa_gate_then_action",
+      "datetime": "2023-05-18T12:00:00",
+      "dataset_version": "1.0.0",
+      "expected_episode_sha256": "841063c39cc3ca0a7679fd0e245f5f437093ccb5dde982d550b9ff2ac1d18cb7",
+      "subtasks": [
+        {
+          "subtask_tag": "sub_qa",
+          "upstream_task_id": "e775c78_3"
+        },
+        {
+          "subtask_tag": "sub_act",
+          "upstream_task_id": "29a7b7e_1"
+        }
+      ],
+      "timeline_structure": [
+        {
+          "event_id": "ev_qa_gate",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "immediate",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_qa",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_1",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "ava_comms",
+          "trigger_mode": "after_turn_settled",
+          "offset_sec": 0.0,
+          "target_subtask_tag": null,
+          "noise_text": "Community meetup stickers arrived—help yourselves at the front desk!"
+        },
+        {
+          "event_id": "ev_act_launch",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "after_turn_settled",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_act",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_dup_act",
+          "kind": "external_duplicate_webhook",
+          "channel": "feishu_group",
+          "sender": "sync_reminder_bot",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.0,
+          "target_subtask_tag": "sub_act",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_2",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "maya_design",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.5,
+          "target_subtask_tag": null,
+          "noise_text": "Heads up team: Figma library tokens for the Q3 icon refresh just finished syncing."
+        }
+      ]
+    },
+    {
+      "episode_id": "AW_M2_09",
+      "track_id": "M-2",
+      "scenario_type": "readonly_qa_gate_then_action",
+      "datetime": "2023-05-18T12:00:00",
+      "dataset_version": "1.0.0",
+      "expected_episode_sha256": "0a091b7cfae7c156d744ce9d2b3bf21c725d393d4a3f73dcbc66ae4ad9d1b1b3",
+      "subtasks": [
+        {
+          "subtask_tag": "sub_qa",
+          "upstream_task_id": "7847649_1"
+        },
+        {
+          "subtask_tag": "sub_act",
+          "upstream_task_id": "e3d6c94_3"
+        }
+      ],
+      "timeline_structure": [
+        {
+          "event_id": "ev_qa_gate",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "immediate",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_qa",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_1",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "liam_ops",
+          "trigger_mode": "after_turn_settled",
+          "offset_sec": 0.0,
+          "target_subtask_tag": null,
+          "noise_text": "Lobby espresso machine on floor 4 is back online after descaling."
+        },
+        {
+          "event_id": "ev_act_launch",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "after_turn_settled",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_act",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_dup_act",
+          "kind": "external_duplicate_webhook",
+          "channel": "feishu_group",
+          "sender": "sync_reminder_bot",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.0,
+          "target_subtask_tag": "sub_act",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_2",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "chloe_hr",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.5,
+          "target_subtask_tag": null,
+          "noise_text": "Reminder that optional wellness ergonomic assessments close this Friday at 5pm."
+        }
+      ]
+    },
+    {
+      "episode_id": "AW_M2_10",
+      "track_id": "M-2",
+      "scenario_type": "readonly_qa_gate_then_action",
+      "datetime": "2023-05-18T12:00:00",
+      "dataset_version": "1.0.0",
+      "expected_episode_sha256": "4932ec1489b0595aa9678b927bda18bc4bf1c9a77c3b3f4c0b92b6466ae4b1c5",
+      "subtasks": [
+        {
+          "subtask_tag": "sub_qa",
+          "upstream_task_id": "383cbac_3"
+        },
+        {
+          "subtask_tag": "sub_act",
+          "upstream_task_id": "4d12842_1"
+        }
+      ],
+      "timeline_structure": [
+        {
+          "event_id": "ev_qa_gate",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "immediate",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_qa",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_1",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "noah_infra",
+          "trigger_mode": "after_turn_settled",
+          "offset_sec": 0.0,
+          "target_subtask_tag": null,
+          "noise_text": "FYI staging Grafana dashboards may blip for ~30s while we rotate read-replica certs."
+        },
+        {
+          "event_id": "ev_act_launch",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "after_turn_settled",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_act",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_dup_act",
+          "kind": "external_duplicate_webhook",
+          "channel": "feishu_group",
+          "sender": "sync_reminder_bot",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.0,
+          "target_subtask_tag": "sub_act",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_2",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "sofia_qa",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.5,
+          "target_subtask_tag": null,
+          "noise_text": "Anyone leaving an umbrella near conference room Birch? Left it at reception."
+        }
+      ]
+    },
+    {
+      "episode_id": "AW_M3_01",
+      "track_id": "M-3",
+      "scenario_type": "sequential_errand_and_cross_app_qa",
+      "datetime": "2023-05-18T12:00:00",
+      "dataset_version": "1.0.0",
+      "expected_episode_sha256": "1de99efc84725170c84a42def4c26f7b01aed184d1d757c955fbc28eeeaf54dd",
+      "subtasks": [
+        {
+          "subtask_tag": "sub_a",
+          "upstream_task_id": "68ee2c9_1"
+        },
+        {
+          "subtask_tag": "sub_b",
+          "upstream_task_id": "23cf851_3"
+        }
+      ],
+      "timeline_structure": [
+        {
+          "event_id": "ev_step1",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "immediate",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_a",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_1",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "ethan_pm",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 0.8,
+          "target_subtask_tag": null,
+          "noise_text": "Kudos to the mobile crew for keeping crash-free sessions above 99.9% this week!"
+        },
+        {
+          "event_id": "ev_dup_step1",
+          "kind": "external_duplicate_webhook",
+          "channel": "feishu_group",
+          "sender": "sync_reminder_bot",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.3,
+          "target_subtask_tag": "sub_a",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_step2_qa",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "after_turn_settled",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_b",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_2",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "maya_design",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 0.8,
+          "target_subtask_tag": null,
+          "noise_text": "Sharing the dark-mode contrast audit slides in the general design folder for casual reading."
+        }
+      ]
+    },
+    {
+      "episode_id": "AW_M3_02",
+      "track_id": "M-3",
+      "scenario_type": "sequential_errand_and_cross_app_qa",
+      "datetime": "2023-05-18T12:00:00",
+      "dataset_version": "1.0.0",
+      "expected_episode_sha256": "513464777ee55f7280a50959c81c584bd6aefb739d4eb01ce93e308fdd41ba49",
+      "subtasks": [
+        {
+          "subtask_tag": "sub_a",
+          "upstream_task_id": "23cf851_2"
+        },
+        {
+          "subtask_tag": "sub_b",
+          "upstream_task_id": "82e2fac_3"
+        }
+      ],
+      "timeline_structure": [
+        {
+          "event_id": "ev_step1",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "immediate",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_a",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_1",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "liam_ops",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 0.8,
+          "target_subtask_tag": null,
+          "noise_text": "Catering dropped off extra sourdough bagels in the west kitchen if anyone wants one."
+        },
+        {
+          "event_id": "ev_dup_step1",
+          "kind": "external_duplicate_webhook",
+          "channel": "feishu_group",
+          "sender": "sync_reminder_bot",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.3,
+          "target_subtask_tag": "sub_a",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_step2_qa",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "after_turn_settled",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_b",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_2",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "chloe_hr",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 0.8,
+          "target_subtask_tag": null,
+          "noise_text": "Parking garage level B2 will have EV charger maintenance tomorrow morning."
+        }
+      ]
+    },
+    {
+      "episode_id": "AW_M3_03",
+      "track_id": "M-3",
+      "scenario_type": "sequential_errand_and_cross_app_qa",
+      "datetime": "2023-05-18T12:00:00",
+      "dataset_version": "1.0.0",
+      "expected_episode_sha256": "e5a3604eb0aa02b9f28a5ff356768b642f31b213cb34df8ea6c6026147baef82",
+      "subtasks": [
+        {
+          "subtask_tag": "sub_a",
+          "upstream_task_id": "383cbac_2"
+        },
+        {
+          "subtask_tag": "sub_b",
+          "upstream_task_id": "e7a10f8_1"
+        }
+      ],
+      "timeline_structure": [
+        {
+          "event_id": "ev_step1",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "immediate",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_a",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_1",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "noah_infra",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 0.8,
+          "target_subtask_tag": null,
+          "noise_text": "Weekly CI cache cleanup reclaimed 180 GB on the runner pool, no action required."
+        },
+        {
+          "event_id": "ev_dup_step1",
+          "kind": "external_duplicate_webhook",
+          "channel": "feishu_group",
+          "sender": "sync_reminder_bot",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.3,
+          "target_subtask_tag": "sub_a",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_step2_qa",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "after_turn_settled",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_b",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_2",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "sofia_qa",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 0.8,
+          "target_subtask_tag": null,
+          "noise_text": "BrowserStack macOS Ventura queue times are back down under 15 seconds now."
+        }
+      ]
+    },
+    {
+      "episode_id": "AW_M3_04",
+      "track_id": "M-3",
+      "scenario_type": "sequential_errand_and_cross_app_qa",
+      "datetime": "2023-05-18T12:00:00",
+      "dataset_version": "1.0.0",
+      "expected_episode_sha256": "b650772e60387dad635df1af0d4970fc7a513bb42ed888997850fc7ab455c7e5",
+      "subtasks": [
+        {
+          "subtask_tag": "sub_a",
+          "upstream_task_id": "31dc501_2"
+        },
+        {
+          "subtask_tag": "sub_b",
+          "upstream_task_id": "82e2fac_1"
+        }
+      ],
+      "timeline_structure": [
+        {
+          "event_id": "ev_step1",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "immediate",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_a",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_1",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "ethan_pm",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 0.8,
+          "target_subtask_tag": null,
+          "noise_text": "Moving Thursday's optional brown-bag lightning talks from room Cedar to Maple."
+        },
+        {
+          "event_id": "ev_dup_step1",
+          "kind": "external_duplicate_webhook",
+          "channel": "feishu_group",
+          "sender": "sync_reminder_bot",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.3,
+          "target_subtask_tag": "sub_a",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_step2_qa",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "after_turn_settled",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_b",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_2",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "hana_analytics",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 0.8,
+          "target_subtask_tag": null,
+          "noise_text": "Published the monthly funnel cohort chart in Metabase—purely FYI, no action items."
+        }
+      ]
+    },
+    {
+      "episode_id": "AW_M3_05",
+      "track_id": "M-3",
+      "scenario_type": "sequential_errand_and_cross_app_qa",
+      "datetime": "2023-05-18T12:00:00",
+      "dataset_version": "1.0.0",
+      "expected_episode_sha256": "8111d866cd1eefbbc56aa8b0f1734543020dd4a349464c595d671d12bdbc10fc",
+      "subtasks": [
+        {
+          "subtask_tag": "sub_a",
+          "upstream_task_id": "5238afc_1"
+        },
+        {
+          "subtask_tag": "sub_b",
+          "upstream_task_id": "425a494_2"
+        }
+      ],
+      "timeline_structure": [
+        {
+          "event_id": "ev_step1",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "immediate",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_a",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_1",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "lucas_sec",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 0.8,
+          "target_subtask_tag": null,
+          "noise_text": "Monthly phishing drill wrap-up posted on the intranet blog; great report rate everyone."
+        },
+        {
+          "event_id": "ev_dup_step1",
+          "kind": "external_duplicate_webhook",
+          "channel": "feishu_group",
+          "sender": "sync_reminder_bot",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.3,
+          "target_subtask_tag": "sub_a",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_step2_qa",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "after_turn_settled",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_b",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_2",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "ava_comms",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 0.8,
+          "target_subtask_tag": null,
+          "noise_text": "Press clipping digest for May is live in the company newsletter archive."
+        }
+      ]
+    },
+    {
+      "episode_id": "AW_M3_06",
+      "track_id": "M-3",
+      "scenario_type": "sequential_errand_and_cross_app_qa",
+      "datetime": "2023-05-18T12:00:00",
+      "dataset_version": "1.0.0",
+      "expected_episode_sha256": "85dcd17e10fc5e6239bdd3d31a187d3bf5584c7d619ea1003d6695a1b1b2002a",
+      "subtasks": [
+        {
+          "subtask_tag": "sub_a",
+          "upstream_task_id": "9bf2c8a_3"
+        },
+        {
+          "subtask_tag": "sub_b",
+          "upstream_task_id": "e85d92a_1"
+        }
+      ],
+      "timeline_structure": [
+        {
+          "event_id": "ev_step1",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "immediate",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_a",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_1",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "owen_support",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 0.8,
+          "target_subtask_tag": null,
+          "noise_text": "CSAT ticked up 3 points after last Tuesday's help-center search tweak!"
+        },
+        {
+          "event_id": "ev_dup_step1",
+          "kind": "external_duplicate_webhook",
+          "channel": "feishu_group",
+          "sender": "sync_reminder_bot",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.3,
+          "target_subtask_tag": "sub_a",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_step2_qa",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "after_turn_settled",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_b",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_2",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "maya_design",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 0.8,
+          "target_subtask_tag": null,
+          "noise_text": "Typography specimen posters arrived—feel free to grab one by the printer bay."
+        }
+      ]
+    },
+    {
+      "episode_id": "AW_M3_07",
+      "track_id": "M-3",
+      "scenario_type": "sequential_errand_and_cross_app_qa",
+      "datetime": "2023-05-18T12:00:00",
+      "dataset_version": "1.0.0",
+      "expected_episode_sha256": "5a1446efa413589d65db8f4c20bc84e7d804ccf6c793ac3642fe4ecc4ae27b47",
+      "subtasks": [
+        {
+          "subtask_tag": "sub_a",
+          "upstream_task_id": "6a5e690_3"
+        },
+        {
+          "subtask_tag": "sub_b",
+          "upstream_task_id": "21abae1_2"
+        }
+      ],
+      "timeline_structure": [
+        {
+          "event_id": "ev_step1",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "immediate",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_a",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_1",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "liam_ops",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 0.8,
+          "target_subtask_tag": null,
+          "noise_text": "Shuttle bus route B is running 5 minutes behind due to rain on Mercer Street."
+        },
+        {
+          "event_id": "ev_dup_step1",
+          "kind": "external_duplicate_webhook",
+          "channel": "feishu_group",
+          "sender": "sync_reminder_bot",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.3,
+          "target_subtask_tag": "sub_a",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_step2_qa",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "after_turn_settled",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_b",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_2",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "chloe_hr",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 0.8,
+          "target_subtask_tag": null,
+          "noise_text": "Book club voted on 'Designing Data-Intensive Applications' for next month's casual chat."
+        }
+      ]
+    },
+    {
+      "episode_id": "AW_M3_08",
+      "track_id": "M-3",
+      "scenario_type": "sequential_errand_and_cross_app_qa",
+      "datetime": "2023-05-18T12:00:00",
+      "dataset_version": "1.0.0",
+      "expected_episode_sha256": "d543fd845823983f2b6c9e1e03cfde68039137d5d1d121e6f54061382058550c",
+      "subtasks": [
+        {
+          "subtask_tag": "sub_a",
+          "upstream_task_id": "0d22252_2"
+        },
+        {
+          "subtask_tag": "sub_b",
+          "upstream_task_id": "afc4005_2"
+        }
+      ],
+      "timeline_structure": [
+        {
+          "event_id": "ev_step1",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "immediate",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_a",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_1",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "noah_infra",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 0.8,
+          "target_subtask_tag": null,
+          "noise_text": "CDN edge PoP in Frankfurt finished routine BGP maintenance with zero packet loss."
+        },
+        {
+          "event_id": "ev_dup_step1",
+          "kind": "external_duplicate_webhook",
+          "channel": "feishu_group",
+          "sender": "sync_reminder_bot",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.3,
+          "target_subtask_tag": "sub_a",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_step2_qa",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "after_turn_settled",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_b",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_2",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "sofia_qa",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 0.8,
+          "target_subtask_tag": null,
+          "noise_text": "Updated the optional Playwright tips wiki page with trace-viewer keyboard shortcuts."
+        }
+      ]
+    },
+    {
+      "episode_id": "AW_M3_09",
+      "track_id": "M-3",
+      "scenario_type": "sequential_errand_and_cross_app_qa",
+      "datetime": "2023-05-18T12:00:00",
+      "dataset_version": "1.0.0",
+      "expected_episode_sha256": "4570a5e89fc8c2ae85ab545abf7c667070769ab3514497bd6ba5980546ba24ff",
+      "subtasks": [
+        {
+          "subtask_tag": "sub_a",
+          "upstream_task_id": "5a83b05_3"
+        },
+        {
+          "subtask_tag": "sub_b",
+          "upstream_task_id": "6bdbc26_2"
+        }
+      ],
+      "timeline_structure": [
+        {
+          "event_id": "ev_step1",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "immediate",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_a",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_1",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "ethan_pm",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 0.8,
+          "target_subtask_tag": null,
+          "noise_text": "Customer advisory board recap recording is uploaded for anyone curious over lunch."
+        },
+        {
+          "event_id": "ev_dup_step1",
+          "kind": "external_duplicate_webhook",
+          "channel": "feishu_group",
+          "sender": "sync_reminder_bot",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.3,
+          "target_subtask_tag": "sub_a",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_step2_qa",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "after_turn_settled",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_b",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_2",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "hana_analytics",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 0.8,
+          "target_subtask_tag": null,
+          "noise_text": "Snowflake warehouse auto-suspend window tuned from 10m to 5m—queries unaffected."
+        }
+      ]
+    },
+    {
+      "episode_id": "AW_M3_10",
+      "track_id": "M-3",
+      "scenario_type": "sequential_errand_and_cross_app_qa",
+      "datetime": "2023-05-18T12:00:00",
+      "dataset_version": "1.0.0",
+      "expected_episode_sha256": "8d6a110d35fb652f12da2900d2ae7fc85d8f6a3236dc3647ea6cc173d07073fd",
+      "subtasks": [
+        {
+          "subtask_tag": "sub_a",
+          "upstream_task_id": "e3d6c94_1"
+        },
+        {
+          "subtask_tag": "sub_b",
+          "upstream_task_id": "9aae7da_1"
+        }
+      ],
+      "timeline_structure": [
+        {
+          "event_id": "ev_step1",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "immediate",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_a",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_1",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "lucas_sec",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 0.8,
+          "target_subtask_tag": null,
+          "noise_text": "YubiKey lanyards are restocked in the IT vending locker on floor 3."
+        },
+        {
+          "event_id": "ev_dup_step1",
+          "kind": "external_duplicate_webhook",
+          "channel": "feishu_group",
+          "sender": "sync_reminder_bot",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 1.3,
+          "target_subtask_tag": "sub_a",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_step2_qa",
+          "kind": "user_chat",
+          "channel": "feishu_p2p",
+          "sender": "user",
+          "trigger_mode": "after_turn_settled",
+          "offset_sec": 0.0,
+          "target_subtask_tag": "sub_b",
+          "noise_text": null
+        },
+        {
+          "event_id": "ev_noise_2",
+          "kind": "external_noise",
+          "channel": "feishu_group",
+          "sender": "ava_comms",
+          "trigger_mode": "at_offset_sec",
+          "offset_sec": 0.8,
+          "target_subtask_tag": null,
+          "noise_text": "Town hall Q&A Slido link will open tomorrow afternoon as usual."
+        }
+      ]
+    }
+  ]
+}

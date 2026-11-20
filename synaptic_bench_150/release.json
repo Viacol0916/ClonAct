@@ -1,0 +1,9 @@
+{
+  "name": "Synaptic-Bench-150",
+  "version": "1.0.0",
+  "source_versions": {
+    "dataset": "2.0.0",
+    "evaluator": "2.0.1"
+  },
+  "dataset_sha256": "6031dd9ddc42d9028f6c9c624b11ddb54dccf01d72b5327cd3239b50ab1dce7b"
+}

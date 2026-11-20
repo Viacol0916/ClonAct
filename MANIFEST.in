@@ -1,0 +1,18 @@
+include LICENSE THIRD_PARTY_NOTICES.md README.md dsh_runner/package.json dsh_runner/pnpm-lock.yaml
+prune data
+prune experiments
+prune results
+prune workspaces
+prune .venv
+prune .venv_are
+prune .venv_appworld
+prune dsh_runner/node_modules
+recursive-exclude * *.jsonl *.pyc *.patch *.sqlite *.db *.bundle .env .env.*
+exclude synaptic_bench_150/data/summary_pa150.json
+exclude appworld_micro_30/data/dataset_summary.json
+prune synaptic_stream_60/data/gold
+prune synaptic_stream_60/data/swe_patches
+
+prune archive
+prune third_party
+prune paper

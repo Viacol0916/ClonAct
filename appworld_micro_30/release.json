@@ -1,0 +1,9 @@
+{
+  "name": "AppWorld-Micro-30",
+  "version": "1.0.0",
+  "source_versions": {
+    "dataset": "1.0.0",
+    "evaluator": "1.0.1"
+  },
+  "dataset_sha256": "b407b896b58ddee440897c97c409f787385016e30ce246f90f7d28ef7893a761"
+}

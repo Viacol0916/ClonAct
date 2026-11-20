@@ -1,0 +1,58 @@
+# Credentials and local environments
+.env
+.env.*
+!/.env.example
+.venv/
+.venv_*/
+/.venv
+/.venv_*
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+.DS_Store
+**/node_modules/
+/dsh_runner/node_modules
+
+# Downloaded data, runtime workspaces, and new experiment output
+/data/
+/data
+/workspaces/
+/.tmp/
+/experiments/outputs/
+/results/
+/experiments/.ss60_aw_snapshots/
+/experiments/pa150_smoke*/
+/experiments/pa150_synaptic_full_*/
+/experiments/pa150_v200_*/
+/experiments/appworld_micro30_dual_arm/forensics/
+/experiments/appworld_micro30_dual_arm/logs/
+/experiments/probe_a1_smoke/
+/experiments/probe_exp3_cross_model/
+/experiments/paper_v1_*/forensic/
+/experiments/paper_v1_*/forensics/
+/experiments/paper_v1_*/forensic_*/
+/experiments/paper_v1_*/*/forensic/
+/experiments/paper_v1_*/*/forensics/
+/experiments/paper_v1_*/logs/
+/experiments/paper_v1_*/*/logs/
+*.sqlite
+*.log
+
+
+# Official comparison baseline, installed locally at its pinned revision
+/third_party/dsh-superagent-prototype/
+/third_party/dsh-superagent-prototype
+
+# Build outputs
+*.egg-info/
+/build/
+/dist/
+
+# Generated benchmark datasets, patches, and local summaries stay local.
+/synaptic_bench_150/data/*.jsonl
+/synaptic_bench_150/data/summary_pa150.json
+/appworld_micro_30/data/*.jsonl
+/appworld_micro_30/data/dataset_summary.json
+/synaptic_stream_60/data/*.jsonl
+/synaptic_stream_60/data/gold/
+/synaptic_stream_60/data/swe_patches/

@@ -1,0 +1,155 @@
+{
+  "streams_count": 3,
+  "unique_tasks_total": 60,
+  "events_per_stream": [
+    240,
+    240,
+    240
+  ],
+  "regimes": [
+    "moderate",
+    "surge"
+  ],
+  "surge_compression_ratio": 2.5,
+  "tau_sec": 600.0,
+  "conflict_free_coding_design": true,
+  "selected_gold": [
+    {
+      "stream_id": "STREAM_01",
+      "sha256": "fd0f6ca95e422e37415b9a41c7271e619b225c0a6cf8d53bb3a89107a4584c12",
+      "selected_suites_passed": 3,
+      "base_suites_passed": 0,
+      "nonselected_suites_passed": 0,
+      "upstream_inputs": {
+        "click/feature2": {
+          "feature_patch_sha256": "05f2f03f68418268761169ed07be7253ae74d1054780735b01247ad893ac0225",
+          "tests_patch_sha256": "97bdc0a9e2590ff9befd92e5d9d6e738f95094a71c2c3d166785ff16629dd91d"
+        },
+        "jinja/feature9": {
+          "feature_patch_sha256": "667339d1a657466aa723e5f978a316442bd0c5b2164f3f9bdcf7c29bc8f1e7de",
+          "tests_patch_sha256": "93b689458357158cfc1a22e89f69ce0befa691111c26eedff45c06d801bb150e"
+        },
+        "dspy/feature3": {
+          "feature_patch_sha256": "cd9c292cb9904eb7abfa76cd8b66e8b09cc8222cd73c59b9b8fa05b6b1f196e6",
+          "tests_patch_sha256": "d522745016ebb7262f9ab23cc4c0a85faaf31e808652a899564d6445eee1bee4"
+        }
+      }
+    },
+    {
+      "stream_id": "STREAM_02",
+      "sha256": "c5130db193299b9d340270fb61cf0c47c780299b6f06d217712a49cfb8f0a94f",
+      "selected_suites_passed": 3,
+      "base_suites_passed": 0,
+      "nonselected_suites_passed": 0,
+      "upstream_inputs": {
+        "click/feature3": {
+          "feature_patch_sha256": "86ab8758fe4e9fd27acefedcde9dda2668989071e5be8f166235159117d4d375",
+          "tests_patch_sha256": "15aedaa84e04f0e8ba9cabd78725666cc18f1a104e140d33ae8dfdf73d77205e"
+        },
+        "jinja/feature10": {
+          "feature_patch_sha256": "34a471112bfe90851b2cbee0c7a9b9a4784dc3553e274393ad5388965e022c40",
+          "tests_patch_sha256": "ae33e73bd4737e87f4c8827f3417fde4fe1c337c8d09eb6cae3e5bcf70defc43"
+        },
+        "dspy/feature4": {
+          "feature_patch_sha256": "7191dea7695bacaddbd3d1bbb06eba6d437ed00ece4225a5d7381cdd62999db4",
+          "tests_patch_sha256": "a8c816c077494d46b3acd05b54ae8d3bf33c35564af80d73427e2d3491d2ddcd"
+        }
+      }
+    },
+    {
+      "stream_id": "STREAM_03",
+      "sha256": "e85c59bd3a649bb8953dfa0d8bf73ed496e92f9a21ef0817b96f3caea3ad9b80",
+      "selected_suites_passed": 3,
+      "base_suites_passed": 0,
+      "nonselected_suites_passed": 0,
+      "upstream_inputs": {
+        "click/feature4": {
+          "feature_patch_sha256": "078e8d6d177329d345f09942daa77f9c6cd2cba515e3906e5539da465a4111f7",
+          "tests_patch_sha256": "7f461126b5658e67d846544c92f1ea10c38a3e321a968653282587e6f02bec0c"
+        },
+        "dspy/feature6": {
+          "feature_patch_sha256": "df953a719965909d2b48e655e10cd0aaca6c43cd237539595b4bf0a62d526947",
+          "tests_patch_sha256": "4e070a26d8cb4d14c71098fac8df7a35c7671f3258fe90e858e195a7cc106894"
+        },
+        "networkx/networkx__networkx-8531": {
+          "feature_patch_sha256": "1225bd996a000ba2903445a6ff4fe288a3b3f05368b35c89f499fde12539f3ab",
+          "tests_patch_sha256": "7a43f9c0e0e19edfc7fcf51447bb5b7217e7612a22d783ac4a17b6389dc4b59b"
+        }
+      }
+    }
+  ],
+  "zero_overlap_audit": {
+    "pa150_cooperbench_feature_overlap": 0,
+    "pa150_swe_instance_overlap": 0,
+    "micro30_appworld_task_id_overlap": 0,
+    "micro30_appworld_generator_id_overlap": 0,
+    "pa150_excluded_cooperbench_count": 99,
+    "pa150_excluded_swe_count": 42,
+    "note_on_repositories": "All 9 coding tasks (8 held-out CooperBench features + 1 held-out SWE-Interact instance, 3 disjoint sub-projects per stream) and 51 AppWorld tasks+generators have 0% overlap with PA-150 (including H-4 waves) and Micro-30, and 0% intra-stream file overlap (zero Git merge conflicts by construction)."
+  },
+  "streams": [
+    {
+      "stream_id": "STREAM_01",
+      "repo_slug": "workspace/multi-project-monorepo",
+      "base_commit": "15e0bbd45d846c3391b897d28d3b432a984c966c4b3da8c6ec0179cfe2c552bf",
+      "projects": [
+        "click",
+        "jinja",
+        "dspy"
+      ],
+      "fingerprint": "4abb13066c86a6f2",
+      "tasks_count": 20,
+      "events_count": 240,
+      "categories": {
+        "code_independent": 3,
+        "app_write": 11,
+        "readonly_qa": 6
+      }
+    },
+    {
+      "stream_id": "STREAM_02",
+      "repo_slug": "workspace/multi-project-monorepo",
+      "base_commit": "15e0bbd45d846c3391b897d28d3b432a984c966c4b3da8c6ec0179cfe2c552bf",
+      "projects": [
+        "click",
+        "jinja",
+        "dspy"
+      ],
+      "fingerprint": "ffa1675a48d98764",
+      "tasks_count": 20,
+      "events_count": 240,
+      "categories": {
+        "code_independent": 3,
+        "app_write": 11,
+        "readonly_qa": 6
+      }
+    },
+    {
+      "stream_id": "STREAM_03",
+      "repo_slug": "workspace/multi-project-monorepo",
+      "base_commit": "a4e0ede729a0174e9e0ec0f7c64428540efc6b435cef73e0ef5421e1ccb0fe2b",
+      "projects": [
+        "click",
+        "dspy",
+        "networkx"
+      ],
+      "fingerprint": "0793daa1f0cc533d",
+      "tasks_count": 20,
+      "events_count": 240,
+      "categories": {
+        "code_independent": 3,
+        "app_write": 11,
+        "readonly_qa": 6
+      }
+    }
+  ],
+  "streams_jsonl_sha256": "f6a2f839a71c475f9a763bd1954061d932d233a410938e7b6d36ea26a5f04459",
+  "benchmark_name": "Synaptic-Stream-60",
+  "benchmark_version": "1.0.0",
+  "evaluator_version": "1.0.0",
+  "source_versions": {
+    "dataset": "3.0.0",
+    "evaluator": "3.0.0"
+  },
+  "dataset_sha256": "f6a2f839a71c475f9a763bd1954061d932d233a410938e7b6d36ea26a5f04459"
+}
